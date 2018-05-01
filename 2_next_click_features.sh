@@ -1,0 +1,26 @@
+#gawk -F"," -f 2_next_ip.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > ~/Data/TalkingData/runtime/train/next_ip.csv
+#gawk -F"," -f 2_next_ip_channel.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > ~/Data/TalkingData/runtime/train/next_ip_channel.csv
+#gawk -F"," -f 2_next_ip_app.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > ~/Data/TalkingData/runtime/train/next_ip_app.csv
+#gawk -F"," -f 2_next_channel.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > ~/Data/TalkingData/runtime/train/next_channel.csv
+#gawk -F"," -f 2_next_app_device.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > ~/Data/TalkingData/runtime/train/next_app_device.csv
+#gawk -F"," -f 2_next_app_channel.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > ~/Data/TalkingData/runtime/train/next_app_channel.csv
+#gawk -F"," -f 2_next_all.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > ~/Data/TalkingData/runtime/train/next_all.csv
+gawk -F"," -f 2_next_device_os.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > /media/ike/CE94F7F894F7E13F/Data/TalkingData/runtime/train/next_device_os.csv
+gawk -F"," -f 2_next_app_device_os.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > /media/ike/CE94F7F894F7E13F/Data/TalkingData/runtime/train/next_app_device_os.csv
+gawk -F"," -f 2_next_channel_device_os.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > /media/ike/CE94F7F894F7E13F/Data/TalkingData/runtime/train/next_channel_device_os.csv
+gawk -F"," -f 2_next_app_device_os_channel.awk <(cat <(sed 1d ~/Data/TalkingData/train/train.csv) <(sed 1d ~/Data/TalkingData/train/test.csv) | tac) | tac > /media/ike/CE94F7F894F7E13F/Data/TalkingData/runtime/train/next_app_device_os_channel.csv
+
+
+
+
+#gawk -F"," -f 2_next_ip.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > ~/Data/TalkingData/runtime/test/next_ip.csv
+#gawk -F"," -f 2_next_ip_channel.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > ~/Data/TalkingData/runtime/test/next_ip_channel.csv
+#gawk -F"," -f 2_next_ip_app.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > ~/Data/TalkingData/runtime/test/next_ip_app.csv
+#gawk -F"," -f 2_next_channel.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > ~/Data/TalkingData/runtime/test/next_channel.csv
+#gawk -F"," -f 2_next_app_device.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > ~/Data/TalkingData/runtime/test/next_app_device.csv
+#gawk -F"," -f 2_next_app_channel.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > ~/Data/TalkingData/runtime/test/next_app_channel.csv
+#gawk -F"," -f 2_next_all.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > ~/Data/TalkingData/runtime/test/next_all.csv
+gawk -F"," -f 2_next_device_os.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > /media/ike/CE94F7F894F7E13F/Data/TalkingData/runtime/test/next_device_os.csv
+gawk -F"," -f 2_next_app_device_os.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > /media/ike/CE94F7F894F7E13F/Data/TalkingData/runtime/test/next_app_device_os.csv
+gawk -F"," -f 2_next_channel_device_os.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > /media/ike/CE94F7F894F7E13F/Data/TalkingData/runtime/test/next_channel_device_os.csv
+gawk -F"," -f 2_next_app_device_os_channel.awk <(cat <(sed 1d ~/Data/TalkingData/test/train.csv) <(sed 1d ~/Data/TalkingData/test/test_gap.csv) <(sed 1d ~/Data/TalkingData/test/test.csv) | tac ) | tac > /media/ike/CE94F7F894F7E13F/Data/TalkingData/runtime/test/next_app_device_os_channel.csv
